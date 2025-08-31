@@ -151,7 +151,26 @@ h2 {
     background-color: #000000b5;
     padding: 5px 0px;
 }
+.top_nav {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.top_nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+.site_header .top_navigation {
+    margin: 0px 0px 10px;
+}
 
+.site_header.sticky .top_navigation {
+    display: none;
+}
 .sg_nav {
     padding: 0px;
     margin: 0px;
@@ -678,6 +697,9 @@ width:150px;
 }
 
 .sg_nav .sg_nav_item a {
+    font-size: 14px;
+}
+.top_nav a {
     font-size: 14px;
 }
 
