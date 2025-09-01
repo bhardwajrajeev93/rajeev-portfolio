@@ -762,6 +762,9 @@ h2 {
 .skils_box_row h3 {
     font-size: 24px;
 }
+.Banner {
+    height: auto;
+}
 }
 
 @media(max-width:991px){
@@ -876,7 +879,9 @@ button.toggle_button {
 }
 
     /*---- toggle header end ------*/
-
+h1 {
+    font-size: 32px;
+}
 .button_wrapper .cta {
     padding: 13px 20px;
     min-width: 169px;
@@ -954,7 +959,15 @@ button.toggle_button {
 
 .Banner {
     height: auto;
-    padding: 120px 0px 50px;
+    padding: 180px 0px 50px;
+}
+.top_nav {
+    gap: 6px;
+    flex-direction: column;
+}
+
+.top_nav li {
+    width: 100%;
 }
 
 h2 {
