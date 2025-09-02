@@ -192,7 +192,18 @@ a {-webkit-transition: all 0.3s ease-out;-moz-transition: all 0.3s ease-out;-o-t
 }
 .sg_Brand_div p {
     margin: 0px;
-    font-size: 30px;
+     font-size: 55px;
+    font-family: "Meow Script", cursive;
+    line-height: 1;
+    font-weight: 500;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+}
+.site_header.sticky .sg_Brand_div p {
+    font-size: 40px;
 }
 .sg_Brand_div a {
     text-decoration: none;
@@ -769,9 +780,6 @@ h2 {
     padding: 10px 0px;
 }
 
-.sg_Brand_div p {
-    font-size: 25px;
-}
 }
 
 @media(max-width:991px){
@@ -802,6 +810,9 @@ h2 {
     font-size: 18px;
     height: 35px;
     width: 35px;
+}
+.site_header.sticky .sg_Brand_div p {
+    font-size: 34px;
 }
 }
 
