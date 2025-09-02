@@ -108,14 +108,22 @@ navItems.forEach(item => {
 document.addEventListener("DOMContentLoaded", function () {
     const tabLinks = document.querySelectorAll(".tab_link");
     const projects = document.querySelectorAll(".project_col"); 
+    function normalize(str) {
+        return str.trim().toLowerCase().replace(/\s+/g, "");
+    }
+
     tabLinks.forEach(tab => {
         tab.addEventListener("click", function () {
             tabLinks.forEach(t => t.classList.remove("active"));
             this.classList.add("active");
-            let filter = this.textContent.trim(); 
+
+            let filter = normalize(this.textContent);
+
             projects.forEach(project => {
-                let tags = [...project.querySelectorAll(".tech_tag")].map(tag => tag.textContent.trim());            
-                if (filter === "All" || tags.includes(filter)) {
+                let tags = [...project.querySelectorAll(".tech_tag")]
+                    .map(tag => normalize(tag.textContent));
+
+                if (filter === "all" || tags.includes(filter)) {
                     project.style.display = "block";
                 } else {
                     project.style.display = "none";
@@ -124,6 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
 
 // tabs script end here
 

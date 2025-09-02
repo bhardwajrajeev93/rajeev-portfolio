@@ -765,6 +765,13 @@ h2 {
 .Banner {
     height: auto;
 }
+.site_header {
+    padding: 10px 0px;
+}
+
+.sg_Brand_div p {
+    font-size: 25px;
+}
 }
 
 @media(max-width:991px){
@@ -826,8 +833,8 @@ button.toggle_button {
 .sg_nav_wrap {
   position: fixed;
   top: 0;
-  left: -50%;
-  width: 50%;
+  left: -100%;
+  width: 200px;
   height: 100%;
   background: #fff;
   transition: left 0.4s ease;
@@ -892,7 +899,8 @@ h1 {
 }
 
 .work_main_box {
-    padding-left: 60px;
+padding-left: 28px;
+        padding-top: 42px;
 }
 
 .work_main_wrap .exp_icon {
@@ -908,7 +916,7 @@ h1 {
 }
 
 .work_main_wrap:not(:last-child) {
-    padding-bottom: 60px;
+    padding-bottom: 0px;
 }
 
 .Contact_section .div_cta {
